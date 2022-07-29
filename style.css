@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top:20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    list-style-type: decimal-leading-zero;
+    text-decoration: none;
+}
+
+#mobile-button{
+    display: none;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+header {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 200px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#heading-line-1 {
+    margin-left: 100px;
+    font-size: 10rem;
+    font-weight: 300;
+    animation: slide-right 1s;
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0.2;
+        transform: translateX(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0.2;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#heading-line-2 {
+    margin-left: 150px;
+    font-size: 8rem;
+    animation: slide-left 3s;
+}
+
+#full-stack {
+    color: #be4bc4;
+}
+
+main {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    min-height: 10vh;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 1.25rem;
+}
+
+.work {
+    min-height: 30vh;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 1.25rem;
+}
+
+.project-article {
+    max-width: 45%;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.project-article img {
+    max-width: 400px;
+    height:auto;
+}
+
+.about {
+    min-height: 20vh;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 1.25rem;
+}
+
+h2 {
+   margin-bottom: 10px;
+}
+
+.stack {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-end;
+    gap: 5px;
+
+}
+
+.skill {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.skill img {
+    height: 80px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.skill h3 {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #CCA43B;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.25rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 20px;
+    width: auto;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+}
+
+.footer-right {
+    height: 100%;
+    margin-right: 20px;
+    width: 20%;
+}
