@@ -38,43 +38,19 @@
 
     <header>
         <div id="heading-line-1">Hello, world!</div>
-        <div id="heading-line-2">I'm Rich - a <span id="full-stack">full stack</span> developer.</div>
-    </header>
-    <main>
-
+        <div id="heading-line-2">I'm Rich - a full stack developer.</div>
         <section class="intro">
             <div class="statement">
                 <p>I've been learning a lot and now want to get stuck in and put it into practice. Let's Go!</p>
             </div>
         </section>
+    </header>
 
-        <section class="work" id="work">
-            <h2>What I've been upto</h2>
-            <article class="project-article">
-                <h3>weatherTron 3000</h3>
-                <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
-                <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
-                <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
-            </article>
+    <main>
 
-            <article class="project-article">
-                <h3>weatherTron 3000</h3>
-                <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
-                <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
-                <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
-            </article>
-
-            <article class="project-article">
-                <h3>weatherTron 3000</h3>
-                <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
-                <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
-                <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
-            </article>
-        </section>
-<!--        <div class="about-border">-->
         <section class="about" id="about">
-            <h2>About me</h2>
-            <div class="statement">
+        <h2>About me</h2>
+        <div class="statement">
             <p>I've a fascination for all things development - the combination of
                 creativity, logic, technology and there always being something new to
                 discover, this drives my excitement for the industry and building things
@@ -87,10 +63,11 @@
             <p>But, I've been playing around with computers since I was about 13, building my own as soon as I could - mostly to play Quake
                 and Unreal Tournament with friends at school. I want to keep building on the experience I've gained and continue learning to create
                 wonderful things.</p>
-            </div>
+        </div>
         </section>
 
         <section class="stack">
+            <h2>Skills</h2>
             <div class="skill">
                 <img src="/images/html.png" alt="html 5 shield logo" />
                 <h3>HTML</h3>
@@ -98,6 +75,10 @@
             <div class="skill">
                 <img src="/images/css.png" alt="css 3 shield logo" />
                 <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <img src="/images/sass.png" alt="css 3 shield logo" />
+                <h3>Sass</h3>
             </div>
             <div class="skill">
                 <img src="/images/php.png" alt="PHP logo" />
@@ -124,12 +105,50 @@
                 <h3>Node.js</h3>
             </div>
         </section>
+
+        <section class="work" id="work">
+            <h2>What I've been upto</h2>
+            <div class="article-container">
+                <article class="project-article">
+                    <h3>weatherTron 3000</h3>
+                    <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
+                    <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
+                    <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
+                </article>
+
+                <article class="project-article">
+                    <h3>OOP Collection app</h3>
+                    <h4>A group project to display a collection of planetary objects with details. I produced the UI, JS DOM manipulation and population as well as additional features which didn't make it to main). HTML/CSS/JS/PHP.</h4>
+                    <img src="images/PPP-solarsys.png" alt="screenshot of a solar system and planets app" />
+                    <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
+                </article>
+
+                <article class="project-article">
+                    <h3>weatherTron 3000</h3>
+                    <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
+                    <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
+                    <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
+                </article>
+            </div>
+        </section>
+<!--        <div class="about-border">-->
+
 <!--        </div>-->
 
 
 
         <section class="contact" id="contact">
-
+            <h2>Contact</h2>
+            <h3>If you have a question or have a project idea, send me a message.</h3>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mdobabra" method="POST">
+                    <input class="contact-name input" name="name" placeholder="Name" required="true">
+                    <input class="contact-email input" type="email" name="_replyto" placeholder="Email address" required="true">
+                    <textarea class="contact-message input" name="message" placeholder="Message" style="resize:none" required="true"></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    <input class="contact-form-button" type="submit" value="Submit">
+                </form>
+            </div>
         </section>
 
     </main>
