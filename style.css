@@ -51,6 +51,11 @@ a:visited {
     margin-left: 100px;
 }
 
+#Flogo {
+    max-width: 50px;
+    height: auto;
+}
+
 nav {
     width: 100%;
     position: sticky;
