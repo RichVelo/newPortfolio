@@ -22,11 +22,19 @@ hamburger.addEventListener("click", toggleMenu);
 
 //nav hide on scroll down and appear on scroll up
 
+//variable targeted to nav
 const navBar = document.querySelector('nav')
+
+//variable for last window Y-axis position
 let prevScrollpos = window.pageYOffset
+
+// on scroll in the window function is called
 window.onscroll = function() {
 
+    //variable for current window Y-axis position
     let currentScrollpos = window.pageYOffset
+    //if statement to check which is greater - last or current and if last we remove
+    //the class of hide from the nav element or add it if current is greater.
     if(prevScrollpos > currentScrollpos) {
         navBar.classList.remove("hide")
     } else {
