@@ -1,3 +1,4 @@
+//burger menu
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
@@ -17,3 +18,20 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu);
+
+
+//nav hide on scroll down and appear on scroll up
+
+const navBar = document.querySelector('nav')
+let prevScrollpos = window.pageYOffset
+window.onscroll = function() {
+
+    let currentScrollpos = window.pageYOffset
+    if(prevScrollpos > currentScrollpos) {
+        navBar.classList.remove("hide")
+    } else {
+        navBar.classList.add("hide")
+    }
+
+    prevScrollpos = currentScrollpos;
+}

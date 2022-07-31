@@ -54,8 +54,8 @@ a:visited {
 nav {
     width: 100%;
     position: sticky;
-    top:20px;
-    margin-top: 20px;
+    top: 0px;
+    z-index: 100;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -63,12 +63,20 @@ nav {
     flex-direction: row;
     font-size: 1.5rem;
     background-color: #ffffff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hide {
+    transform: translateY(-100px);
+}
+
+.links-right {
+    margin-right: 100px;
 }
 
 li {
     display: inline;
     padding: 10px;
-    list-style-type: decimal-leading-zero;
     text-decoration: none;
 }
 
@@ -216,7 +224,7 @@ main {
 
 .work {
     min-height: 100vh;
-    width: 100%;
+    width: 90%;
     margin: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
