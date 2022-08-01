@@ -53,7 +53,4 @@ lightOrDarkMode.addEventListener('click', (e) => {
     const navbar = document.querySelector('nav')
     document.body.classList.toggle('dark')
     navbar.classList.toggle('dark')
-
-    //links
-
 })
