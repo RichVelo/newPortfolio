@@ -43,3 +43,17 @@ window.onscroll = function() {
 
     prevScrollpos = currentScrollpos;
 }
+
+//light or dark mode
+
+const lightOrDarkMode = document.querySelector('#light-dark-mode')
+
+lightOrDarkMode.addEventListener('click', (e) => {
+    e.preventDefault()
+    const navbar = document.querySelector('nav')
+    document.body.classList.toggle('dark')
+    navbar.classList.toggle('dark')
+
+    //links
+
+})
