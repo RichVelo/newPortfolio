@@ -1,5 +1,4 @@
 <?php
-
 ?>
 <!Doctype html>
 <html lang="en">
@@ -12,7 +11,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="">
+<div class="Tlogo">
+    <img src="images/logo.png" alt="Letter 'R' in a box as logo" id="Tlogo"/>
+</div>
 <nav>
     <div class="logo">
         <a href="#home"><img src="images/logo.png" alt="Letter 'R' in a box as logo" id="Rlogo"/></a>
@@ -22,7 +24,7 @@
             <li><a href="#about"> About </a></li>
             <li><a href="#work"> Work </a></li>
             <li><a href="#contact"> Contact </a></li>
-
+            <li><a href="" id="light-dark-mode"><img src="images/mode.svg" alt="light and dark mode toggle" id="modetoggle"/></a></li>
         </ol>
     </div>
 </nav>
@@ -30,9 +32,8 @@
 <div id="mobile-button">
     <ul class="menu">
         <li><a class="menuItem" href="#about"> About </a></li>
-        <li><a class="menuItem" href="#work"> Work </a></li>
+        <li><a class="menuItem" href="#work"> Projects </a></li>
         <li><a class="menuItem" href="#contact"> Contact </a></li>
-
     </ul>
     <button class="hamburger">
         <!-- material icons https://material.io/resources/icons/ -->
@@ -58,7 +59,7 @@
                     comes with software development and I'm looking forward to starting a
                     career in this exciting industry.</p>
                 <br>
-                <p>I started my journey in tech and dev with <a class="io-academy-link" href="https://io-academy.uk/courses/full-stack-track/">iO Academy</a> in early 2022 following a career change from the world of financial services.</p>
+                <p>I started my journey in tech and dev with <a class="io-academy-link" href="https://io-academy.uk/courses/full-stack-track/" target="_blank">iO Academy</a> in early 2022 following a career change from the world of financial services.</p>
                 <br>
                 <p>But, I've been playing around with computers since I was about 13, building my own as soon as I could - mostly to play Quake
                     and Unreal Tournament with friends at school. I want to keep building on the experience I've gained and continue learning to create
@@ -70,39 +71,39 @@
             <div class="skills">
                 <div class="skill">
                     <img src="/images/html.png" alt="html 5 shield logo" />
-                    <h3>HTML</h3>
+                    <p>HTML</p>
                 </div>
                 <div class="skill">
                     <img src="/images/css.png" alt="css 3 shield logo" />
-                    <h3>CSS</h3>
+                    <p>CSS</p>
                 </div>
                 <div class="skill">
-                    <img src="/images/sass.png" alt="css 3 shield logo" />
-                    <h3>Sass</h3>
-                </div>
-                <div class="skill">
-                    <img src="/images/php.png" alt="PHP logo" />
-                    <h3>PHP</h3>
+                    <img src="/images/sass.png" alt="Sass logo" />
+                    <p>Sass</p>
                 </div>
                 <div class="skill">
                     <img src="/images/js.png" alt="JavaScript logo" />
-                    <h3>JavaScript</h3>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/images/php.png" alt="PHP logo" />
+                    <p>PHP</p>
                 </div>
                 <div class="skill">
                     <img src="/images/react.png" alt="React logo" />
-                    <h3>React</h3>
+                    <p>React</p>
                 </div>
                 <div class="skill">
                     <img src="/images/mongo.png" alt="MongoDB logo" />
-                    <h3>Mongodb</h3>
+                    <p>Mongodb</p>
                 </div>
                 <div class="skill">
                     <img src="/images/git.png" alt="git hub logo" />
-                    <h3>git</h3>
+                    <p>git</p>
                 </div>
                 <div class="skill">
                     <img src="/images/node.png" alt="Node JS logo" />
-                    <h3>Node.js</h3>
+                    <p>Node.js</p>
                 </div>
             </div>
         </div>
@@ -152,9 +153,7 @@
             </form>
         </div>
     </section>
-
 </main>
-
 <footer>
     <div class="footer-left">
         <div class="logo">
@@ -170,14 +169,13 @@
     <div class="footer-right">
         <div class="footer-links">
             <ul>
-                <li><a href="https://github.com/RichVelo" target="_blank">GitHub</a></li>
+                <li><a class="" href="https://github.com/RichVelo" target="_blank">GitHub</a></li>
                 <li><a href="https://codepen.io/richvelo" target="_blank">CodePen</a></li>
                 <li><a href="https://twitter.com/RichoKerr" target="_blank">Twitter</a></li>
                 <li><a href="http://www.instagram.com/riich_kerr" target="_blank">Insta</a></li>
                 <li><a href="https://www.linkedin.com/in/rich0kerr-b1918583" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
-
     </div>
 </footer>
 </body>
