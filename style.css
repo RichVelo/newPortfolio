@@ -64,6 +64,16 @@ a:visited {
     color: inherit;
 }
 
+.Tlogo {
+    width: 90%;
+    display: none;
+}
+
+#Tlogo{
+    max-width: 100px;
+    height: auto;
+}
+
 #Rlogo {
     max-width: 50px;
     height: auto;
@@ -385,9 +395,18 @@ footer {
         display: none;
     }
 
+    .Tlogo {
+        width: 90%;
+        display: block;
+        margin-left: 50px;
+        margin-top: 20px
+    }
+
     header {
         width: 90%;
-        min-height: 100vh;
+        min-height: 80vh;
+        margin-top: 0;
+        padding-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
