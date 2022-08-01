@@ -146,7 +146,7 @@ li {
     color: #506e83;
     font-size: 3rem;
     list-style: none;
-    padding-top: 4rem;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
