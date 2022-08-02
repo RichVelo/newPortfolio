@@ -1,4 +1,5 @@
 <?php
+
 ?>
 <!Doctype html>
 <html lang="en">
@@ -7,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
@@ -43,31 +48,33 @@
 </div>
 
 <header id="home">
-    <div id="heading-line-1"><h1>Hello, world!</h1></div>
-    <div id="heading-line-2"><h2>I'm Rich - I like building things with computers - Let's go!</h2></div>
+    <div id="heading-line-1">Hello, world!</div>
+    <div id="heading-line-2">I'm Rich - a <span class=" full-stack">full stack</span> developer</div>
+    <div class="header-button"><a href="#work">View my work.
+            <svg class="down-arrow" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z">
+                </path></svg></a>
+    </div>
 </header>
 
 <main>
     <section class="about" id="about">
         <div class="about-me">
-            <h3>About me</h3>
+            <h2>About me</h2>
             <div class="statement">
-                <p>I've a fascination for all things development - the combination of
-                    creativity, logic, technology and there always being something new to
-                    discover, this drives my excitement for the industry and building things
-                    people love to use. I am fully committed to the life - long learning that
-                    comes with software development and I'm looking forward to starting a
-                    career in this exciting industry.</p>
+                <p> I'm a Junior Full Stack Developer and certified Scrum Master, seeking my first
+                    full time role in the tech sector following 10 years of experience in financial services.
+                    I graduated in May 2022 from the Full Stack Track at <a class="h3" href="https://io-academy.uk/courses/full-stack-track/" target="_blank">iO Academy</a>
+                    and am adept in numerous front-and-back end technologies.</p>
                 <br>
-                <p>I started my journey in tech and dev with <a class="io-academy-link" href="https://io-academy.uk/courses/full-stack-track/" target="_blank">iO Academy</a> in early 2022 following a career change from the world of financial services.</p>
-                <br>
-                <p>But, I've been playing around with computers since I was about 13, building my own as soon as I could - mostly to play Quake
-                    and Unreal Tournament with friends at school. I want to keep building on the experience I've gained and continue learning to create
-                    wonderful things.</p>
+                <p>My passion for technology dates back to childhood years spent building gaming
+                    computers in my bedroom. There is much I love about development - the combination
+                    of creativity and logic, the constant possibility of something new to discover,
+                    the satisfaction of building something users love.</p>
             </div>
         </div>
         <div class="stack">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <div class="skills">
                 <div class="skill">
                     <img src="images/html.png" alt="html 5 shield logo" />
@@ -110,27 +117,34 @@
     </section>
 
     <section class="work" id="work">
-        <h2>What I've been up to</h2>
+        <h2>Featured Projects</h2>
         <div class="article-container">
             <article class="project-article">
                 <h3>weatherTron 3000</h3>
-                <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
+                <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions using JSON data. HTML/CSS/JS.</h4>
                 <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
                 <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
             </article>
 
             <article class="project-article">
-                <h3>OOP Collection app</h3>
-                <h4>A group project to display a collection of planetary objects with details. I produced the UI, JS DOM manipulation and population as well as additional features which didn't make it to main). HTML/CSS/JS/PHP.</h4>
+                <h3>Planet Listing App</h3>
+                <h4>A listing app for the planets of our solar system with a focus on Object Oriented Programming. I produced wire frames in Figma, used MySQL to build and query a database as a
+                    RESTful API, populated and displayed modals using PHP and JavaScript (ES6).</h4>
                 <img src="images/PPP-solarsys.png" alt="screenshot of a solar system and planets app" />
-                <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
+                <a href="https://dev.io-academy.uk/projects/2022-jan/planet-plinky-plonk/"><h4>GitHub Repo</h4></a>
             </article>
 
             <article class="project-article">
-                <h3>weatherTron 3000</h3>
-                <h4>A solo project to call an api and display the local weather for home, with dynamicaly changing icons to represent weather conditions. HTML/CSS/JS.</h4>
-                <img src="images/weatherTron.jpg" alt="screenshot of a weather forecast app" />
-                <a href="https://github.com/RichVelo/weatherPage"><h4>GitHub Repo</h4></a>
+                <h3>Job Board</h3>
+                <h4>Using React, bootstrap and Sass,
+                    fetched jobs data via RESTful API
+                    and implemented filtering to
+                    display open roles matching user
+                    search criteria. Final product was a
+                    live and responsive online jobs
+                    board.</h4>
+                <img src="images/jobboard.png" alt="screenshot of a job search listing website" />
+                <a href="https://2022-jan-fish-job-search.dev.io-academy.uk/"><h4>GitHub Repo</h4></a>
             </article>
         </div>
     </section>
@@ -159,22 +173,31 @@
         <div class="logo">
             <a href="#home"><img src="images/logo.png" alt="Letter 'R' in a box as logo" id="Flogo"/></a>
         </div>
-        <div>
+        <div class="thanks">
             Thanks for reading!
         </div>
         <div>
-            &copy 2022-present Rich Kerr. All Rights Reserved - bleep blorp
+            &copy 2022-present Rich Kerr. All Rights Reserved
         </div>
     </div>
     <div class="footer-right">
         <div class="footer-links">
-            <ul>
-                <li><a class="" href="https://github.com/RichVelo" target="_blank">GitHub</a></li>
-                <li><a href="https://codepen.io/richvelo" target="_blank">CodePen</a></li>
-                <li><a href="https://twitter.com/RichoKerr" target="_blank">Twitter</a></li>
-                <li><a href="http://www.instagram.com/riich_kerr" target="_blank">Insta</a></li>
-                <li><a href="https://www.linkedin.com/in/rich0kerr-b1918583" target="_blank">LinkedIn</a></li>
-            </ul>
+            <div class="toTop">
+                <a href="#home">
+                    <svg class="up-arrow" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/RichVelo" class="fa fa-github" target="__blank"></a>
+                <a href="https://codepen.io/richvelo" class="fa fa-codepen" target="__blank"></a>
+                <a href="https://twitter.com/RichoKerr" class="fa fa-twitter" target="__blank"></a>
+                <a href="http://www.instagram.com/riich_kerr" class="fa fa-instagram" target="__blank"></a>
+                <a href="https://www.linkedin.com/in/rich0kerr-b1918583" class="fa fa-linkedin" target="__blank"></a>
+            </div>
+
         </div>
     </div>
 </footer>
