@@ -310,13 +310,13 @@ main {
 
 .article-container {
     display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
 }
 
 .project-article {
-    max-width: 100%;
+    max-width: 35%;
     border: 2px solid #be4bc4;
     padding: 10px;
 }
