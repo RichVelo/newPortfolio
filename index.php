@@ -44,7 +44,7 @@
 
 <header id="home">
     <div id="heading-line-1"><h1>Hello, world!</h1></div>
-    <div id="heading-line-2"><h2>I'm Rich - I like building things with computers - Let's Go!</h2></div>
+    <div id="heading-line-2"><h2>I'm Rich - I like building things with computers - Let's go!</h2></div>
 </header>
 
 <main>
@@ -110,7 +110,7 @@
     </section>
 
     <section class="work" id="work">
-        <h2>What I've been upto</h2>
+        <h2>What I've been up to</h2>
         <div class="article-container">
             <article class="project-article">
                 <h3>weatherTron 3000</h3>
