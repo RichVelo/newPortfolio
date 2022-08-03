@@ -49,18 +49,22 @@ window.onscroll = function() {
 const lightOrDarkMode = document.querySelector('#light-dark-mode')
 
 lightOrDarkMode.addEventListener('click', (e) => {
+    //prevent refresh
     e.preventDefault()
 
+    //toggling mode for most elements
     const navbar = document.querySelector('nav')
 
     document.body.classList.toggle('theme')
     navbar.classList.toggle('theme')
 
+    //social icons font color shows correctly between modes
     const socialsIcons = document.querySelectorAll('.fa')
     for (let i = 0; i < socialsIcons.length; i++) {
         socialsIcons[i].style.color = '#ffffff'
     }
 
+    //project articles backgrounds change with mode toggle
     const projectArticles = document.querySelectorAll('.project-article')
     for (let i = 0; i < projectArticles.length; i++) {
         if (projectArticles[i].classList.contains('project-article-dark')) {
