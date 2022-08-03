@@ -86,7 +86,8 @@ a:visited {
 }
 
 nav {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -235,7 +236,7 @@ main {
 .about {
     margin: auto;
     min-height: 80vh;
-    width: 90%;
+    width: 80%;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1.25rem;
@@ -310,19 +311,40 @@ main {
 
 .article-container {
     display: flex;
-    flex-direction: row;
-    column-gap: 10px;
+    flex-direction: column;
+    row-gap: 10px;
     justify-content: center;
 }
 
 .project-article {
-    max-width: 35%;
-    border: 2px solid #be4bc4;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: auto;
+    row-gap: 10px;
+    column-gap: 10%;
+    width: 100%;
+    border-radius: 10px;
     padding: 10px;
 }
 
+.project-article-dark {
+    border-radius: 10px;
+    background-color: #282828;
+}
+
+.project-article-light {
+    border-radius: 10px;
+    background-color: #f3f1f1;
+}
+
+.project-article-details {
+    max-width: 40%;
+}
+
 .project-article img {
-    max-width: 100%;
+    max-width: 50%;
     height:auto;
     padding: 5px;
 }
@@ -421,36 +443,13 @@ footer {
     text-decoration: none;
     font-size: 30px;
     transition: all 0.3s linear;
+    color: white;
+    background: #1a1a1a;
 }
 
 .fa:hover{
     background-color: #282828;
     color: #be4bc4;
-}
-
-.fa-github {
-    color: white;
-    background: #1a1a1a;
-}
-
-.fa-codepen {
-    color: white;
-    background: #1a1a1a;
-}
-
-.fa-twitter {
-    color: white;
-    background: #1a1a1a;
-}
-
-.fa-instagram {
-    color: white;
-    background: #1a1a1a;
-}
-
-.fa-linkedin {
-    color: white;
-    background: #1a1a1a;
 }
 
 .toTop {
@@ -460,7 +459,7 @@ footer {
     justify-content: center;
 }
 .up-arrow {
-    fill: #1a1a1a;
+    fill: #ffffff;
     margin: 0 auto;
     transform: rotate(270deg);
 }
@@ -485,11 +484,11 @@ footer {
         width: 90%;
         min-height: 80vh;
         margin-top: 0;
-        padding-top: 100px;
+        padding-top: 25px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+        justify-content: center;
+        /*flex-wrap: wrap;*/
     }
 
     #heading-line-1 {
@@ -498,7 +497,14 @@ footer {
     }
 
     #heading-line-2 {
+        font-size: 2rem;
         animation: slide-up-line2 0.5s ease-in;
+    }
+
+    .header-button {
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 5px;
     }
 
     .about {
@@ -558,7 +564,6 @@ footer {
         justify-content: center;
         align-items: center;
         row-gap: 10px;
-
         font-size: 1.25rem;
     }
 
@@ -566,17 +571,25 @@ footer {
         font-size: 3rem;
     }
 
-    .article-container {
-        width: 90%;
+    .project-article {
+
         display: flex;
         flex-direction: column;
+        margin: auto;
         row-gap: 10px;
+        width: 90%;
+        border-radius: 10px;
+        padding: 10px;
     }
 
-    .project-article {
+    .project-article-details {
         max-width: 100%;
-        border: 1px solid #000000;
-        padding: 10px;
+    }
+
+    .project-article img {
+        max-width: 100%;
+        height:auto;
+        padding: 5px;
     }
 
     .contact-form form {
@@ -599,8 +612,10 @@ footer {
     }
 
     .footer-left {
+        margin: auto;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         column-gap: 20px;
     }
@@ -611,6 +626,7 @@ footer {
     .footer-right {
         display: flex;
         flex-direction: column;
+        margin: auto;
         width: 100%;
     }
 

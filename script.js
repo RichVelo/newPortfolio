@@ -50,7 +50,26 @@ const lightOrDarkMode = document.querySelector('#light-dark-mode')
 
 lightOrDarkMode.addEventListener('click', (e) => {
     e.preventDefault()
+
     const navbar = document.querySelector('nav')
+
     document.body.classList.toggle('theme')
     navbar.classList.toggle('theme')
+
+    const socialsIcons = document.querySelectorAll('.fa')
+    for (let i = 0; i < socialsIcons.length; i++) {
+        socialsIcons[i].style.color = '#ffffff'
+    }
+
+    const projectArticles = document.querySelectorAll('.project-article')
+    for (let i = 0; i < projectArticles.length; i++) {
+        if (projectArticles[i].classList.contains('project-article-dark')) {
+            console.log('contains dark class')
+            projectArticles[i].classList.remove('project-article-dark')
+            projectArticles[i].classList.add('project-article-light')
+        } else {
+            projectArticles[i].classList.remove('project-article-light')
+            projectArticles[i].classList.add('project-article-dark')
+        }
+    }
 })
