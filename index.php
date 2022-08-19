@@ -119,6 +119,17 @@
     <section class="work" id="work">
         <h2>Featured Projects</h2>
         <div class="article-container">
+
+            <article class="project-article project-article-dark" id="project-article">
+                <div class="project-article-details">
+                    <h3>Profile Card</h3>
+                    <h4>I wanted to recreate a Profile Card I found online. Uses pseudo class to alter the banner/hero image. HTML/CSS.</h4>
+                    <a href="https://github.com/RichVelo/profileCard1"><h4>GitHub Repo </h4></a> <a href="https://richvelo.github.io/profileCard1"><h4>Live</h4></a>
+                </div>
+                <img src="images/profileCard.jpg" alt="screenshot of a basic HTML and CSS profile card" />
+
+            </article>
+
             <article class="project-article project-article-dark" id="project-article">
                 <div class="project-article-details">
                     <h3>weatherTron 3000</h3>
