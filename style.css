@@ -535,7 +535,7 @@ footer {
 .footer-left {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 5%;
     width: 50%;
     flex-wrap: wrap;
     column-gap: 20px;
@@ -544,8 +544,9 @@ footer {
 
 .footer-right {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 50%;
+    margin-right: 5%;
 }
 .socials {
     display: flex;
@@ -720,7 +721,7 @@ footer {
         width: 100%;
         min-height: 20vh;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column-reverse;
         font-size: 1.25rem;
@@ -732,7 +733,7 @@ footer {
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        column-gap: 20px;
+        /*column-gap: 20px;*/
     }
 
     .thanks{
