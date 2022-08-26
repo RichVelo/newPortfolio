@@ -122,8 +122,8 @@
             <ul>
                 <li>
                     <div class="content">
-                        <h3>Gave notice to leave my job</h3>
-                        <p>After a great deal of thought I decided I needed to change my job. I learnt a lot from the role as Adjudicator,  but I felt I had accomplished what I could in the role. So I gave my 30 days notice on this date to leave the Financial Ombudsman Service (FOS).</p>
+                        <h3>Decided it was time to make a change</h3>
+                        <p>After a great deal of thought I decided I needed to change my job. I learnt a lot from the role as Adjudicator,  but I felt I had accomplished what I could in the role at the Financial Ombudsman Service (FOS).</p>
                     </div>
                     <div class="time">
                         <h4>1 November 2021</h4>
@@ -142,7 +142,7 @@
 
                 <li>
                     <div class="content">
-                        <h3>Graduated from iO Academy</h3>
+                        <h3>iO Academy - Full Stack Training</h3>
                         <p>I began my training at iO Academy. My Trainer, Rayna, provided me with knowledge and support to learn various frontend and backend languages and technologies.</p>
                     </div>
                     <div class="time">
@@ -152,7 +152,7 @@
 
                 <li>
                     <div class="content">
-                        <h3>iO Academy - Full Stack Training</h3>
+                        <h3>Graduated from iO Academy!</h3>
                         <p>What a ride! I learnt so much from this course. Not just coding but also so much about the tech industry, my own strengths and weaknesses in this industry but also what I love to do.</p>
                     </div>
                     <div class="time">
@@ -162,7 +162,7 @@
 
                 <li>
                     <div class="content">
-                        <h3>I moved home and a holiday</h3>
+                        <h3>I took a holiday and moved home</h3>
                         <p>After I finished the course, I visited Croatia and had one of the best, most exciting, relaxing and food & drink filled trips I ever have. I also moved home from the Bath area back to the just outside London.</p>
                     </div>
                     <div class="time">
